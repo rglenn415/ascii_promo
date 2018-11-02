@@ -1,4 +1,5 @@
 from time import sleep
+from termcolor import colored
 
 
 def main():
@@ -6,7 +7,7 @@ def main():
 		with open('rush.txt','r') as file:
 			for line in file:
 				# Removes the newline at end of each print statement
-				print(line, end='')
+				print(colored(line,'blue'), end='')
 				sleep(.06)
 
 
